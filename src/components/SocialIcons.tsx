@@ -31,13 +31,13 @@ const SocialIcons: React.FC<SocialIconsProps> = ({ className = "" }) => {
     },
 
     { 
-      icon: <LanguagesIcon size={18} />, 
+   //   icon: <aricon size={18} />, 
     
       onclick:"changeLanguage('en')",
       label: "English"
     },
     { 
-      icon: <LanguagesIcon size={18} />, 
+   //   icon: <LanguagesIcon size={18} />, 
      
 
       onclick: "changeLanguage('ar')",
