@@ -17,12 +17,12 @@ const SocialIcons: React.FC<SocialIconsProps> = ({ className = "" }) => {
     },
     { 
       icon: <Linkedin size={18} />, 
-      href: "https://linkedin.com/in/yourprofile", 
+      href: window.location.href = "https://www.linkedin.com/in/%D8%A7%D8%AD%D9%85%D8%AF-%D8%A7%D9%84%D9%83%D8%AB%D9%8A%D8%B1%D9%8A-194127317?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", 
       label: "LinkedIn"
     },
     { 
       icon: <Github size={18} />, 
-      href: "https://github.com/AhmedOmarAlkitheri", 
+      href: window.location.href = "https://github.com/AhmedOmarAlkitheri", 
       label: "GitHub"
     },
     { 
