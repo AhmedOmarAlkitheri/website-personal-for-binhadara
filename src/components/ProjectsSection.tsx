@@ -34,7 +34,7 @@ const ProjectsSection: React.FC = () => {
     {
       title: "تطبيق متجر إلكتروني",
       description: "تطبيق متجر إلكتروني خاص بالعميل (Client) حيث يستطيع العميل شراء منتجات تكون تابعه لصنف معين لبراند معين و يحتوي على خصومات لمنتجات معينه و يحتوي على Banner  لأعلان عن منتج و يحتوي على الكثير من المميزات مثل يقدر العميل معرفة جميع الطلبات التي تم شراوها او تم إلغائها من قبل العميل و ميزت ال Theme (Dart,Light) وغيرها من العمليات والوظائف .",
-      image: "https://images.unsplash.com/photo-1534088568595-a066f410bcda?q=80&w=1951&auto=format&fit=crop&ixlib=rb-4.0.3",
+      image: "src/components/images/marketApp.jpg",
       tags: ["Flutter", "Dart", "Firebase","Supabase"],
       // demoUrl: "https://example.com",
       // repoUrl: "https://github.com/yourusername/weather-app"
