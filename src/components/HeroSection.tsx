@@ -25,7 +25,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollToSection }) => {
           <div className="mt-8 flex flex-wrap gap-4">
             <Button 
               className="bg-portfolio-primary hover:bg-portfolio-secondary text-white"
-              onClick={() => window.location.href = "https://Wa.me/967730280622"}
+              onClick={() => window.location.href = "https://Wa.me/967730280622/ahmed"}
 
              
               
