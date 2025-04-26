@@ -1,4 +1,3 @@
-
 import React from "react";
 import SocialIcons from "./SocialIcons";
 import { Button } from "@/components/ui/button";
@@ -25,29 +24,26 @@ const Header: React.FC<HeaderProps> = ({ scrollToSection }) => {
   }, []);
 
   const navLinks = [
-   
-    { name: "المهارات ", id: "skills" },
-    { name: "التعليم ", id: "education" },
-    { name: "المشاريع ", id: "projects" },
-    { name: "معلومات التواصل ", id: "contact" }
-
-    
+    { name: "المهارات", id: "skills" },
+    { name: "التعليم", id: "education" },
+    { name: "المشاريع", id: "projects" },
+    { name: "معلومات التواصل", id: "contact" }
   ];
- 
+
   return (
-    <header 
+    <header
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4 px-6 md:px-10 flex items-center justify-between",
         scrolled ? "bg-white/90 backdrop-blur-md shadow-sm" : "bg-transparent"
       )}
     >
       <div className="font-heading font-bold text-xl md:text-2xl text-portfolio-primary">
-      مطور تطبيقات.بن حيدرة
+        مطور تطبيقات. بن حيدرة
       </div>
-      
+
       <div className="hidden md:flex items-center space-x-8">
         {navLinks.map((link) => (
-          <button 
+          <button
             key={link.id}
             className="text-gray-700 hover:text-portfolio-primary transition-colors"
             onClick={() => scrollToSection(link.id)}
@@ -56,12 +52,12 @@ const Header: React.FC<HeaderProps> = ({ scrollToSection }) => {
           </button>
         ))}
       </div>
-      
+
       <div className="flex items-center space-x-4">
         <SocialIcons className="hidden md:flex" />
-        <Button 
-          variant="outline" 
-          className="md:hidden" 
+        <Button
+          variant="outline"
+          className="md:hidden"
           onClick={() => window.alert("Mobile menu would open here")}
         >
           Menu
@@ -72,3 +68,4 @@ const Header: React.FC<HeaderProps> = ({ scrollToSection }) => {
 };
 
 export default Header;
+
