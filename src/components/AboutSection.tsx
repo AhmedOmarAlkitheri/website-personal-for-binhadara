@@ -7,7 +7,7 @@ const AboutSection: React.FC = () => {
     <section id="about" className="py-20 bg-white px-6 md:px-10">
       <div className="container mx-auto">
         <h2 className="text-3xl md:text-4xl font-heading font-bold text-center text-portfolio-dark mb-4">
-          About Me
+          نبذه عني
         </h2>
         <div className="w-20 h-1 bg-portfolio-primary mx-auto mb-10"></div>
         
