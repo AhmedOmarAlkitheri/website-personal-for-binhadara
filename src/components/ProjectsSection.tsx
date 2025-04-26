@@ -22,8 +22,7 @@ const ProjectsSection: React.FC = () => {
       image: "src/components/images/ALRawad.jpg",
      
       tags: ["Flutter", "Dart", "MySql", "Working with API"],
-      // demoUrl: "https://example.com",
-      // repoUrl: "https://github.com/yourusername/ecommerce"
+     
     },
     {
       title: "نظام فلزة",
