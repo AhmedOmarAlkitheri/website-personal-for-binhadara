@@ -39,23 +39,23 @@ const ContactSection: React.FC = () => {
     
       { 
         icon: <MapPin className="text-portfolio-primary" size={24} />, 
-        label: " العنوان", 
+        label: " العنوان ", 
         value: "حضرموت - شبام - وادي بن علي"
       },
     {
       icon: <Phone className="text-portfolio-primary" size={24} />,
-      label: " رقم الجوال",
+      label: " رقم الجوال ",
       value: "+967 730280622",
     },
     {
       icon: <Globe className="text-portfolio-primary" size={24} />,
-      label: " الموقع الألكتروني الشخصي",
+      label: " الموقع الألكتروني الشخصي ",
       value: "www.yourwebsite.com",
     },
     {
       icon: <Mail className="text-portfolio-primary" size={24} />,
-      label: " البريد الألكتروني",
-      value: "contact@yourwebsite.com",
+      label: " البريد الألكتروني ",
+      value: "a.o.a.770284548@gmail.com",
     },
 
   ];
