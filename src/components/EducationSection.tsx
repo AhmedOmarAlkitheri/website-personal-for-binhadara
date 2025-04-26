@@ -25,9 +25,9 @@ const EducationSection: React.FC = () => {
       // ]
     },
     {
-      degree: "Bachelor of Science in Software Engineering",
-      institution: "National University",
-      years: "2014 - 2018",
+      degree: "حاصل على شهادة في تطوير تطبيقات الموبايل باستخدام فلاتر ",
+      institution: "المخيم الذي أُقيم في حضرموت -القطن",
+      years: "2024 - 2025",
       // description: "Comprehensive study of software development methodologies, data structures, algorithms, and system design.",
       // achievements: [
       //   "Completed capstone project with distinction",
@@ -41,7 +41,7 @@ const EducationSection: React.FC = () => {
     <section id="education" className="py-20 bg-white px-6 md:px-10">
       <div className="container mx-auto">
         <h2 className="text-3xl md:text-4xl font-heading font-bold text-center text-portfolio-dark mb-4">
-          Education
+          التعليم
         </h2>
         <div className="w-20 h-1 bg-portfolio-primary mx-auto mb-10"></div>
         
