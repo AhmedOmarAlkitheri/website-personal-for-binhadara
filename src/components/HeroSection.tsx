@@ -28,6 +28,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollToSection }) => {
             >
              تواصل معي
             </Button>
+            <link rel="stylesheet" href= "https://Wa.me/967730280622" title="as" />
             {/* <Button 
               variant="outline" 
               className="border-portfolio-primary text-portfolio-primary hover:bg-portfolio-light"
