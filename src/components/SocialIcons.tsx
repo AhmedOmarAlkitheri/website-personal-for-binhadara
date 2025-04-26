@@ -1,7 +1,7 @@
 
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { Mail, Linkedin, Github, Phone } from "lucide-react";
+import { Mail, Linkedin, Github, Phone, LanguagesIcon } from "lucide-react";
 
 interface SocialIconsProps {
   className?: string;
@@ -28,7 +28,22 @@ const SocialIcons: React.FC<SocialIconsProps> = ({ className = "" }) => {
       icon: <Phone size={18} />, 
       href: "tel:+1234567890", 
       label: "Phone"
+    },
+
+    { 
+      icon: <LanguagesIcon size={18} />, 
+    
+      onclick:"changeLanguage('en')",
+      label: "English"
+    },
+    { 
+      icon: <LanguagesIcon size={18} />, 
+     
+
+      onclick: "changeLanguage('ar')",
+      label: "العربية"
     }
+  
   ];
 
   return (
