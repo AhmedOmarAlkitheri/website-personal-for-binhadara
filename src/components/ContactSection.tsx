@@ -68,7 +68,7 @@ const ContactSection: React.FC = () => {
       </h2>
       <div className="w-20 h-1 bg-portfolio-primary mx-auto mb-10"></div>
   
-      <div className="grid md:grid-cols-1 gap-10">
+     
         {/* Contact Information */}
         <Card className="shadow-lg">
           <CardContent className="p-6">
@@ -104,7 +104,7 @@ const ContactSection: React.FC = () => {
           </CardContent>
         </Card> 
         */}
-      </div>
+   
     </div>
   </section>
   
