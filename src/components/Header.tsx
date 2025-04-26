@@ -26,10 +26,10 @@ const Header: React.FC<HeaderProps> = ({ scrollToSection }) => {
 
   const navLinks = [
    
-    { name: "المهارات", id: "skills" },
-    { name: "التعليم", id: "education" },
-    { name: "المشاريع", id: "projects" },
-    { name: "معلومات التواصل", id: "contact" }
+    { name: "المهارات ", id: "skills" },
+    { name: "التعليم ", id: "education" },
+    { name: "المشاريع ", id: "projects" },
+    { name: "معلومات التواصل ", id: "contact" }
 
     
   ];
