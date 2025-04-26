@@ -13,7 +13,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollToSection }) => {
       <div className="container mx-auto grid md:grid-cols-2 gap-10 items-center">
         <div className="order-2 md:order-1 animate-fade-in" style={{ animationDelay: "0.2s" }}>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold leading-tight text-portfolio-dark">
-            اسمي <span className="text-portfolio-primary">أحمد عمر بن حيدرة</span>
+            اسمي,<span className="text-portfolio-primary">أحمد عمر بن حيدرة</span>
           </h1>
           <p className="mt-6 text-xl text-gray-700 leading-relaxed">
           مطور تطبيقات و أنظمة ذات إمكانية متوسط في تطوير التطبيقات و الأنظمة أتميز بقدرتي على التعلم السريع وحل المشكلات التقنية، وأسعى لاكتساب خبرة عملية في بيئة مهنية تدعم الابتكار والتطوير. أطمح للعمل ضمن فريق يتيح لي تطبيق مهاراتي والمساهمة في إنجاز مشاريع ذات جودة عالية.
@@ -40,8 +40,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollToSection }) => {
         <div className="order-1 md:order-2 flex justify-center animate-fade-in" style={{ animationDelay: "0.4s" }}>
           <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-lg">
             <img 
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3" 
-              alt="Your Name" 
+            
+              src="images/personImage.png" 
+              alt="Eng.BinHadara" 
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-portfolio-primary/30 to-transparent"></div>
