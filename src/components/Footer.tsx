@@ -10,16 +10,18 @@ const Footer: React.FC = () => {
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
-            <h3 className="text-xl font-heading font-bold">Your Name</h3>
+            <h3 className="text-xl font-heading font-bold"> مطور تطبيقات.بن حيدرة</h3>
             <p className="mt-2 text-gray-300 max-w-md">
-              Building elegant solutions for complex problems through modern web and mobile development.
+            إذا كان لديك أي استفسار أو تواجه أي مشكلة في مجال تطوير تطبيقات الموبايل باستخدام Flutter، لا تتردد في التواصل معي عبر منصات التواصل الاجتماعي.
+أما إذا كنت بحاجة إلى تنفيذ مهمة محددة أو إضافة ميزة معينة أو تطوير جزء من مشروعك، وأنت تبحث عن شخص ينجزها باحترافية وبكتابة كود نظيف (Clean Code)، فأنا هنا لمساعدتك.
+حالياً أركز على تنفيذ المهام والمزايا المطلوبة في تطوير تطبيقات الموبايل، وسأسعى مستقبلاً إلى بناء تطبيقات ومواقع كبيرة بمستوى عالٍ من الجودة والاحترافية.
             </p>
           </div>
           
           <div className="flex flex-col items-center md:items-end">
             <SocialIcons className="mb-4" />
             <p className="text-gray-400 text-sm">
-              &copy; {currentYear} Your Name. All rights reserved.
+              &copy; {currentYear} مطور تطبيقات.بن حيدرة
             </p>
           </div>
         </div>

@@ -12,7 +12,7 @@ const SkillsSection: React.FC = () => {
  
   const technicalSkills: Skill[] = [
     { 
-      name: "تطوير تطبيقات الموبايل باستخدام",
+      name: "تطوير تطبيقات الموبايل",
       description:"باستخدام Flutter و Dart.",
     },
     { 
