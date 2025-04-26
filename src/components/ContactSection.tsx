@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { MapPin, Phone, Globe, Mail, Send } from "lucide-react";
+import { MapPin, Phone, Globe, Mail, Send, HomeIcon } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const ContactSection: React.FC = () => {
@@ -35,38 +35,41 @@ const ContactSection: React.FC = () => {
   };
 
   const contactInfo = [
-    {
-      icon: <MapPin className="text-portfolio-primary" size={24} />,
-      label: "Address",
-      value: "123 Developer Street, Tech City, 12345",
-    },
+    
+    
+      { 
+        icon: <MapPin className="text-portfolio-primary" size={24} />, 
+        label: " العنوان", 
+        value: "حضرموت - شبام - وادي بن علي"
+      },
     {
       icon: <Phone className="text-portfolio-primary" size={24} />,
-      label: "Phone",
-      value: "+1 (234) 567-8901",
+      label: " رقم الجوال",
+      value: "+967 730280622",
     },
     {
       icon: <Globe className="text-portfolio-primary" size={24} />,
-      label: "Website",
+      label: " الموقع الألكتروني الشخصي",
       value: "www.yourwebsite.com",
     },
     {
       icon: <Mail className="text-portfolio-primary" size={24} />,
-      label: "Email",
+      label: " البريد الألكتروني",
       value: "contact@yourwebsite.com",
     },
+
   ];
 
   return (
     <section id="contact" className="py-20 bg-white px-6 md:px-10">
       <div className="container mx-auto">
         <h2 className="text-3xl md:text-4xl font-heading font-bold text-center text-portfolio-dark mb-4">
-          Contact Me
+          التواصل
         </h2>
         <div className="w-20 h-1 bg-portfolio-primary mx-auto mb-10"></div>
         
         <div className="grid md:grid-cols-2 gap-10">
-          {/* Contact Form */}
+          {/* Contact Form
           <Card className="shadow-lg">
             <CardContent className="p-6">
               <h3 className="text-xl font-semibold text-portfolio-primary mb-4">Send a Message</h3>
@@ -115,13 +118,13 @@ const ContactSection: React.FC = () => {
                 </Button>
               </form>
             </CardContent>
-          </Card>
+          </Card> */}
           
           {/* Contact Information */}
           <div>
             <Card className="shadow-lg mb-6">
               <CardContent className="p-6">
-                <h3 className="text-xl font-semibold text-portfolio-primary mb-6">Contact Information</h3>
+                <h3 className="text-xl font-semibold text-portfolio-primary mb-6">معلومات التواصل</h3>
                 
                 <div className="space-y-6">
                   {contactInfo.map((info, index) => (
@@ -137,7 +140,7 @@ const ContactSection: React.FC = () => {
               </CardContent>
             </Card>
             
-            <Card className="shadow-lg">
+            {/* <Card className="shadow-lg">
               <CardContent className="p-0">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387191.03606260403!2d-74.25987584776404!3d40.69767006792443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sca!4v1638547817556!5m2!1sen!2sca"
@@ -149,7 +152,7 @@ const ContactSection: React.FC = () => {
                   aria-label="Location Map"
                 />
               </CardContent>
-            </Card>
+            </Card> */}
           </div>
         </div>
       </div>

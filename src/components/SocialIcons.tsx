@@ -1,7 +1,7 @@
 
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { Mail, Linkedin, Github, Phone, LanguagesIcon } from "lucide-react";
+import { Mail, Linkedin, Github, Phone, LanguagesIcon, HomeIcon } from "lucide-react";
 
 interface SocialIconsProps {
   className?: string;
@@ -11,7 +11,7 @@ const SocialIcons: React.FC<SocialIconsProps> = ({ className = "" }) => {
   const socialLinks = [
     { 
       icon: <Mail size={18} />, 
-      href: "mailto:youremail@example.com", 
+      href: "a.o.a.770284548@gmail.com", 
       label: "Email"
     },
     { 
@@ -21,15 +21,16 @@ const SocialIcons: React.FC<SocialIconsProps> = ({ className = "" }) => {
     },
     { 
       icon: <Github size={18} />, 
-      href: "https://github.com/yourusername", 
+      href: "https://github.com/AhmedOmarAlkitheri", 
       label: "GitHub"
     },
     { 
       icon: <Phone size={18} />, 
-      href: "tel:+1234567890", 
+      href: "tel:+967730280622", 
       label: "Phone"
     },
-
+   
+   
   //   { 
   //  //   icon: <aricon size={18} />, 
     
