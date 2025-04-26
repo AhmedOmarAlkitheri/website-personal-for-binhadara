@@ -19,7 +19,8 @@ const SkillsSection: React.FC = () => {
     { name: "Web Development", level: 90 },
     { name: "Mobile Development", level: 85 },
     { name: "UI/UX Design", level: 80 },
-    { name: "Database Management", level: 85 },
+    { name: "Graphic Design", level: 75 }, // Updated to include Design
+    { name: "Design Other", level: 70 }, // New design skill as requested
     { name: "Cloud Services", level: 75 },
   ];
 
@@ -33,9 +34,15 @@ const SkillsSection: React.FC = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 bg-portfolio-light px-6 md:px-10">
+    <section 
+      id="skills" 
+      className="py-20 bg-portfolio-light px-6 md:px-10"
+      style={{ 
+        background: 'linear-gradient(135deg, #FFF4E6 0%, #FFE6D0 100%)' 
+      }}
+    >
       <div className="container mx-auto">
-        <h2 className="text-3xl md:text-4xl font-heading font-bold text-center text-portfolio-dark mb-4">
+        <h2 className="text-3xl md:text-4xl font-heading font-bold text-center text-portfolio-secondary mb-4">
           My Skills
         </h2>
         <div className="w-20 h-1 bg-portfolio-primary mx-auto mb-10"></div>
@@ -50,10 +57,10 @@ const SkillsSection: React.FC = () => {
               {skills.map((skill, index) => (
                 <div key={index}>
                   <div className="flex justify-between mb-2">
-                    <span className="font-medium text-gray-700">{skill.name}</span>
+                    <span className="font-medium text-portfolio-secondary">{skill.name}</span>
                     <span className="text-portfolio-primary font-medium">{skill.level}%</span>
                   </div>
-                  <Progress value={skill.level} className="h-2" />
+                  <Progress value={skill.level} className="h-2 bg-portfolio-secondary/20" />
                 </div>
               ))}
             </div>
@@ -68,10 +75,10 @@ const SkillsSection: React.FC = () => {
               {languages.map((language, index) => (
                 <div key={index}>
                   <div className="flex justify-between mb-2">
-                    <span className="font-medium text-gray-700">{language.name}</span>
+                    <span className="font-medium text-portfolio-secondary">{language.name}</span>
                     <span className="text-portfolio-primary font-medium">{language.level}%</span>
                   </div>
-                  <Progress value={language.level} className="h-2" />
+                  <Progress value={language.level} className="h-2 bg-portfolio-secondary/20" />
                 </div>
               ))}
             </div>
