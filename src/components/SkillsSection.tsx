@@ -1,81 +1,112 @@
 
 import React from "react";
 import { Card } from "@/components/ui/card";
-import { Code, Paintbrush, Cloud } from "lucide-react";
+import { Code, Lightbulb } from "lucide-react";
 
 interface Skill {
   name: string;
-  icon?: React.ReactNode;
   description: string;
 }
 
 const SkillsSection: React.FC = () => {
-  const skills: Skill[] = [
+  const programmingLanguages: Skill[] = [
     { 
-      name: "Web Development", 
-      icon: <Code className="w-6 h-6 text-portfolio-primary" />,
-      description: "Frontend and Backend Development"
+      name: "JavaScript/TypeScript",
+      description: "Web & Mobile Development"
     },
     { 
-      name: "Mobile Development", 
-      icon: <Code className="w-6 h-6 text-portfolio-primary" />,
-      description: "iOS and Android Development"
+      name: "Python",
+      description: "Data Analysis & Backend Development"
     },
     { 
-      name: "UI/UX Design", 
-      icon: <Paintbrush className="w-6 h-6 text-portfolio-primary" />,
-      description: "User Interface and Experience Design"
+      name: "Java",
+      description: "Enterprise Applications"
     },
     { 
-      name: "Graphic Design", 
-      icon: <Paintbrush className="w-6 h-6 text-portfolio-primary" />,
-      description: "Visual Design and Branding"
+      name: "C++",
+      description: "System Programming"
+    }
+  ];
+
+  const technicalSkills: Skill[] = [
+    { 
+      name: "React & React Native",
+      description: "Frontend & Mobile Development"
     },
     { 
-      name: "Design Other", 
-      icon: <Paintbrush className="w-6 h-6 text-portfolio-primary" />,
-      description: "Additional Design Services"
+      name: "Node.js & Express",
+      description: "Backend Development"
     },
     { 
-      name: "Cloud Services", 
-      icon: <Cloud className="w-6 h-6 text-portfolio-primary" />,
-      description: "Cloud Infrastructure and Deployment"
+      name: "AWS & Cloud Services",
+      description: "Cloud Infrastructure"
     },
+    { 
+      name: "DevOps & CI/CD",
+      description: "Development Operations"
+    }
   ];
 
   return (
     <section 
       id="skills" 
-      className="py-20 px-6 md:px-10"
-      style={{ 
-        background: 'linear-gradient(135deg, #FFF4E6 0%, #FFE6D0 100%)' 
-      }}
+      className="py-20 px-6 md:px-10 bg-gradient-to-br from-portfolio-light to-white"
     >
       <div className="container mx-auto">
-        <h2 className="text-3xl md:text-4xl font-heading font-bold text-center text-portfolio-secondary mb-4">
+        <h2 className="text-3xl md:text-4xl font-heading font-bold text-center text-portfolio-secondary mb-12">
           My Skills
         </h2>
-        <div className="w-20 h-1 bg-portfolio-primary mx-auto mb-10"></div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {skills.map((skill, index) => (
-            <Card 
-              key={index} 
-              className="p-6 hover:shadow-lg transition-shadow duration-300 border-2 border-portfolio-primary/10 hover:border-portfolio-primary"
-            >
-              <div className="flex flex-col items-center text-center space-y-4">
-                <div className="p-3 bg-portfolio-light rounded-full">
-                  {skill.icon}
-                </div>
-                <h3 className="text-xl font-heading font-semibold text-portfolio-secondary">
-                  {skill.name}
-                </h3>
-                <p className="text-gray-600">
-                  {skill.description}
-                </p>
-              </div>
-            </Card>
-          ))}
+        <div className="grid md:grid-cols-2 gap-12">
+          {/* Programming Languages Section */}
+          <div className="space-y-6">
+            <div className="flex items-center gap-3 mb-6">
+              <Code className="w-8 h-8 text-portfolio-primary" />
+              <h3 className="text-2xl font-heading font-semibold text-portfolio-secondary">
+                Programming Languages
+              </h3>
+            </div>
+            <div className="grid gap-4">
+              {programmingLanguages.map((skill, index) => (
+                <Card 
+                  key={index} 
+                  className="p-4 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 border-l-4 border-l-portfolio-primary"
+                >
+                  <h4 className="font-heading font-semibold text-lg text-portfolio-secondary mb-1">
+                    {skill.name}
+                  </h4>
+                  <p className="text-gray-600">
+                    {skill.description}
+                  </p>
+                </Card>
+              ))}
+            </div>
+          </div>
+
+          {/* Technical Skills Section */}
+          <div className="space-y-6">
+            <div className="flex items-center gap-3 mb-6">
+              <Lightbulb className="w-8 h-8 text-portfolio-primary" />
+              <h3 className="text-2xl font-heading font-semibold text-portfolio-secondary">
+                Technical Skills
+              </h3>
+            </div>
+            <div className="grid gap-4">
+              {technicalSkills.map((skill, index) => (
+                <Card 
+                  key={index} 
+                  className="p-4 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 border-l-4 border-l-portfolio-primary"
+                >
+                  <h4 className="font-heading font-semibold text-lg text-portfolio-secondary mb-1">
+                    {skill.name}
+                  </h4>
+                  <p className="text-gray-600">
+                    {skill.description}
+                  </p>
+                </Card>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>
