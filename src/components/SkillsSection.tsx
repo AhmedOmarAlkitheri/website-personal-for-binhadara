@@ -57,8 +57,8 @@ const SkillsSection: React.FC = () => {
         المهارات
       </h2>
   
-      <div className="flex flex-wrap gap-8">
-  
+      <div className="flex flex-col md:flex-row gap-8">
+        
         {/* Technical Skills Section */}
         <div className="w-full md:w-[70%] space-y-6">
           <div className="flex items-center gap-3 mb-6">
@@ -108,6 +108,7 @@ const SkillsSection: React.FC = () => {
       </div>
     </div>
   </section>
+  
   
   );
 };
