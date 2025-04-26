@@ -45,12 +45,12 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollToSection }) => {
         
         <div className="order-1 md:order-2 flex justify-center animate-fade-in" style={{ animationDelay: "0.4s" }}>
           <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-lg">
-            <img 
+       <center>     <img 
 
               src="src/components/images/personImage.png" 
               alt="Eng.BinHadara" 
               className="w-full h-full object-cover"
-            />
+            /> </center>
             <div className="absolute inset-0 bg-gradient-to-t from-portfolio-primary/30 to-transparent"></div>
           </div>
         </div>
