@@ -13,25 +13,27 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollToSection }) => {
       <div className="container mx-auto grid md:grid-cols-2 gap-10 items-center">
         <div className="order-2 md:order-1 animate-fade-in" style={{ animationDelay: "0.2s" }}>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold leading-tight text-portfolio-dark">
-            Hi, I'm <span className="text-portfolio-primary">Your Name</span>
+            اسمي <span className="text-portfolio-primary">أحمد عمر بن حيدرة</span>
           </h1>
           <p className="mt-6 text-xl text-gray-700 leading-relaxed">
-            I'm a developer passionate about creating beautiful and functional web applications. With expertise in various programming languages and frameworks, I build solutions that solve real-world problems.
+          مطور تطبيقات و أنظمة ذات إمكانية متوسط في تطوير التطبيقات و الأنظمة أتميز بقدرتي على التعلم السريع وحل المشكلات التقنية، وأسعى لاكتساب خبرة عملية في بيئة مهنية تدعم الابتكار والتطوير. أطمح للعمل ضمن فريق يتيح لي تطبيق مهاراتي والمساهمة في إنجاز مشاريع ذات جودة عالية.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Button 
               className="bg-portfolio-primary hover:bg-portfolio-secondary text-white"
-              onClick={() => scrollToSection("contact")}
+              onClick={() => "https://Wa.me/967730280622"
+                // scrollToSection("contact")
+              }
             >
-              Contact Me
+             تواصل معي
             </Button>
-            <Button 
+            {/* <Button 
               variant="outline" 
               className="border-portfolio-primary text-portfolio-primary hover:bg-portfolio-light"
               onClick={() => scrollToSection("projects")}
             >
               View My Work
-            </Button>
+            </Button> */}
           </div>
         </div>
         
