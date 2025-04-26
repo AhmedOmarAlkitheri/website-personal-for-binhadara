@@ -25,13 +25,16 @@ const Header: React.FC<HeaderProps> = ({ scrollToSection }) => {
   }, []);
 
   const navLinks = [
-    { name: "About", id: "about" },
-    { name: "Skills", id: "skills" },
-    { name: "Education", id: "education" },
-    { name: "Projects", id: "projects" },
-    { name: "Contact", id: "contact" }
+   // { name: "About", id: "about" },
+    { name: "المهارات", id: "skills" },
+    { name: "التعليم", id: "education" },
+    { name: "المشاريع", id: "projects" },
+    { name: "معلومات التواصل", id: "contact" },
+    { name: "العربية", id: "changeLanguage('ar')" },
+    { name: "English", id: "changeLanguage('en')" }
+    
   ];
-
+ 
   return (
     <header 
       className={cn(
@@ -40,7 +43,7 @@ const Header: React.FC<HeaderProps> = ({ scrollToSection }) => {
       )}
     >
       <div className="font-heading font-bold text-xl md:text-2xl text-portfolio-primary">
-        Your Name
+       مطور تطبيقات.بن حيدرة
       </div>
       
       <div className="hidden md:flex items-center space-x-8">
