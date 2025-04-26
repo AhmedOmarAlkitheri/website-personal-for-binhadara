@@ -60,7 +60,7 @@ const Header: React.FC<HeaderProps> = ({ scrollToSection }) => {
           className="md:hidden"
           onClick={() => window.alert("Mobile menu would open here")}
         >
-          Menu
+          قائمه
         </Button>
       </div>
     </header>
