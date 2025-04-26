@@ -45,7 +45,7 @@ const ContactSection: React.FC = () => {
     {
       icon: <Phone className="text-portfolio-primary" size={24} />,
       label: " رقم الجوال ",
-      value: "730280622 967 +",
+      value: "730280622 967+",
     },
     {
       icon: <Globe className="text-portfolio-primary" size={24} />,
@@ -122,9 +122,9 @@ const ContactSection: React.FC = () => {
           
           {/* Contact Information */}
           <div>
-            <Card className="shadow-lg mb-6">
+            <Card className="shadow-lg">
               <CardContent className="p-6">
-                <h3 className="text-xl font-semibold text-portfolio-primary mb-6">معلومات التواصل</h3>
+                <h3 className="text-xl font-semibold text-portfolio-primary">معلومات التواصل</h3>
                 
                 <div className="space-y-6">
                   {contactInfo.map((info, index) => (
