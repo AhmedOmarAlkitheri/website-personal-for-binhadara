@@ -37,9 +37,10 @@ const Header: React.FC<HeaderProps> = ({ scrollToSection }) => {
       scrolled ? "bg-white/90 backdrop-blur-md shadow-sm" : "bg-transparent"
     )}
   >
-    <div className="font-heading font-bold text-xl md:text-2xl text-portfolio-primary">
-      مطور تطبيقات. بن حيدرة
-    </div>
+   <div className="inline-block font-heading font-bold text-xl md:text-2xl text-portfolio-primary">
+  مطور تطبيقات. بن حيدرة
+</div>
+
   
     <div className="hidden md:flex items-center space-x-8 flex-wrap">
       {navLinks.map((link) => (
