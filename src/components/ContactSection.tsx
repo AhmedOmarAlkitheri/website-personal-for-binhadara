@@ -61,52 +61,38 @@ const ContactSection: React.FC = () => {
   ];
 
   return (
-    <section id="contact" className="w-full py-20 bg-white px-6 md:px-10">
-    <div className="max-w-7xl mx-auto">
-      <h2 className="text-3xl md:text-4xl font-heading font-bold text-center text-portfolio-dark mb-4">
-        التواصل
+    <section id="contact" className="w-full py-20 bg-gradient-to-b from-white via-gray-50 to-white px-6 md:px-10">
+    <div className="max-w-6xl mx-auto">
+      <h2 className="text-4xl md:text-5xl font-bold text-center text-portfolio-dark mb-6 tracking-wide">
+        تواصل معي
       </h2>
-      <div className="w-20 h-1 bg-portfolio-primary mx-auto mb-10"></div>
+      <div className="w-24 h-1 bg-portfolio-primary mx-auto mb-14 rounded-full"></div>
   
-     
+      <div className="flex flex-col md:flex-row items-center justify-center gap-10">
         {/* Contact Information */}
-        <Card className="shadow-lg">
-          <CardContent className="p-6">
-            <h3 className="text-xl font-semibold text-portfolio-primary">معلومات التواصل</h3>
+        <Card className="w-full md:w-2/3 bg-white shadow-2xl rounded-3xl transition hover:scale-105 duration-300">
+          <CardContent className="p-8">
+            <h3 className="text-2xl font-semibold text-portfolio-primary mb-6 text-center">
+              معلومات التواصل
+            </h3>
   
-            <div className="space-y-6">
+            <div className="space-y-8">
               {contactInfo.map((info, index) => (
-                <div key={index} className="flex items-start">
-                  <div className="mr-4">{info.icon}</div>
+                <div key={index} className="flex items-start gap-4">
+                  <div className="text-portfolio-primary text-2xl">{info.icon}</div>
                   <div>
-                    <h4 className="font-medium text-gray-900">{info.label}</h4>
-                    <p className="text-gray-700">{info.value}</p>
+                    <h4 className="text-lg font-medium text-gray-800 mb-1">{info.label}</h4>
+                    <p className="text-gray-600">{info.value}</p>
                   </div>
                 </div>
               ))}
             </div>
           </CardContent>
         </Card>
-  
-        {/* Optional: Google Map Card (معلق بالكود حقك) */}
-        {/* 
-        <Card className="shadow-lg">
-          <CardContent className="p-0">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=..."
-              width="100%"
-              height="200"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              aria-label="Location Map"
-            />
-          </CardContent>
-        </Card> 
-        */}
-   
+      </div>
     </div>
   </section>
+  
   
   );
 };
