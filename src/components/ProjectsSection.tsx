@@ -18,7 +18,7 @@ const ProjectsSection: React.FC = () => {
   const projects: Project[] = [
     {
       title:"تطبيق لمركز رواد المستقبل",
-      description: "تطبيق خاص بطلاب المركز لادارة عمليات التسجيل و تلقي الاشعارات من الادارة و عرض معلومات السكن و عدد الطلاب المتواجدين معه في نفس الغرفة و ايضاء ميزة ارسال الشكاوي و تلقي الرد و يستطيع الطالب الاطلاع على تقييمات البرامج المشترك فيها سوا كانت (شهريه او نصفيه او سنويه ) و يحتوي التطبيق على ميزة (Dark Theme , Light Theme) و غيرها من مهام التي يقوم بها الطالب و يستعرضهاالتطبيق .",
+      description: "تطبيق خاص بطلاب المركز لادارة عمليات التسجيل و تلقي الاشعارات من الادارة و عرض معلومات السكن و عدد الطلاب المتواجدين معه في نفس الغرفة و ايضاء ميزة ارسال الشكاوي و تلقي الرد و يستطيع الطالب الاطلاع على تقييمات البرامج المشترك فيها سوا كانت (شهريه او نصفيه او سنويه ) و يحتوي التطبيق على ميزة (Dark Theme , Light Theme) و غيرها من مهام التي يقوم بها الطالب و يستعرضها التطبيق .",
       image: "src/components/images/ALRawad.jpg",
      
       tags: ["Flutter", "Dart", "MySql", "Working with API"],
@@ -26,7 +26,7 @@ const ProjectsSection: React.FC = () => {
     },
     {
       title: "نظام فلزة",
-      description: " نظام إلكتروني لأدارة نقل الركاب و البضائع ويستطيع من خلال هذا النظام تحديد ما اذا كانت المركب تعمل او لا و يستطيع معرفة من هو الموظف الذي قام بعمليات في  يوم معين و غيرها منم الوظائف و المهام التي ينفذها النظام.",
+      description: " نظام إلكتروني لأدارة نقل الركاب و البضائع ويستطيع من خلال هذا النظام تحديد ما اذا كانت المركب تعمل او لا و يستطيع معرفة من هو الموظف الذي قام بعمليات في  يوم معين و غيرها من الوظائف و المهام التي ينفذها النظام.",
       image: "https://images.unsplash.com/photo-1517430816045-df4ccef2c7ef?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3",
       tags: ["#C", "SqlServer","Oracle" ,".Net FrameWork"],
       // demoUrl: "https://example.com",
@@ -57,68 +57,41 @@ const ProjectsSection: React.FC = () => {
           مشاريعي
         </h2>
         <div className="w-20 h-1 bg-portfolio-primary mx-auto mb-10"></div>
+
+<div className="grid md:grid-cols-2 gap-8">
+  {projects.map((project, index) => (
+    <Card key={index} className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+      
+      <div className="h-48 flex items-center justify-center bg-white overflow-hidden">
+        <img 
+          src={project.image} 
+          alt={project.title} 
+          className="max-h-full max-w-full object-contain transition-transform duration-500 hover:scale-105"
+        />
+      </div>
+
+      <CardContent className="p-6">
+        <h3 className="text-xl font-semibold text-portfolio-primary mb-2">
+          {project.title}
+        </h3>
         
-        <div className="grid md:grid-cols-2 gap-8">
-          {projects.map((project, index) => (
-            <Card key={index} className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-              <div className="h-48 overflow-hidden">
-                <img 
-                  src={project.image} 
-                  alt={project.title} 
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
-                />
-              </div>
-              
-              <CardContent className="p-6">
-                <h3 className="text-xl font-semibold text-portfolio-primary mb-2">
-                  {project.title}
-                </h3>
-                
-                <p className="text-gray-700 mb-4">
-                  {project.description}
-                </p>
-                
-                <div className="flex flex-wrap gap-2 mb-6">
-                  {project.tags.map((tag, idx) => (
-                    <Badge key={idx} variant="secondary" className="bg-portfolio-light text-portfolio-primary">
-                      {tag}
-                    </Badge>
-                  ))}
-                </div>
-                
-                {/* <div className="flex flex-wrap gap-4">
-                  {project.demoUrl && (
-                    <Button 
-                      variant="outline" 
-                      size="sm"
-                      className="text-portfolio-primary border-portfolio-primary hover:bg-portfolio-primary hover:text-white"
-                      asChild
-                    >
-                      <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
-                        <ExternalLink size={16} className="mr-2" />
-                        Live Demo
-                      </a>
-                    </Button>
-                  )}
-                  
-                  {project.repoUrl && (
-                    <Button 
-                      variant="outline" 
-                      size="sm"
-                      className="text-gray-700 hover:bg-gray-100"
-                      asChild
-                    >
-                      <a href={project.repoUrl} target="_blank" rel="noopener noreferrer">
-                        <Github size={16} className="mr-2" />
-                        Source Code
-                      </a>
-                    </Button>
-                  )}
-                </div> */}
-              </CardContent>
-            </Card>
+        <p className="text-gray-700 mb-4">
+          {project.description}
+        </p>
+        
+        <div className="flex flex-wrap gap-2 mb-6">
+          {project.tags.map((tag, idx) => (
+            <Badge key={idx} variant="secondary" className="bg-portfolio-light text-portfolio-primary">
+              {tag}
+            </Badge>
           ))}
         </div>
+
+      </CardContent>
+    </Card>
+  ))}
+</div>
+
       </div>
     </section>
   );
