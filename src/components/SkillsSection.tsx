@@ -1,7 +1,6 @@
-
 import React from "react";
 import { Progress } from "@/components/ui/progress";
-import { Code, PaintBrush, Database, Cloud } from "lucide-react";
+import { Code, Paintbrush, Database, Cloud } from "lucide-react";
 
 interface Skill {
   name: string;
@@ -18,9 +17,9 @@ const SkillsSection: React.FC = () => {
   const skills: Skill[] = [
     { name: "Web Development", level: 90, icon: <Code className="w-5 h-5" /> },
     { name: "Mobile Development", level: 85, icon: <Code className="w-5 h-5" /> },
-    { name: "UI/UX Design", level: 80, icon: <PaintBrush className="w-5 h-5" /> },
-    { name: "Graphic Design", level: 75, icon: <PaintBrush className="w-5 h-5" /> },
-    { name: "Design Other", level: 70, icon: <PaintBrush className="w-5 h-5" /> },
+    { name: "UI/UX Design", level: 80, icon: <Paintbrush className="w-5 h-5" /> },
+    { name: "Graphic Design", level: 75, icon: <Paintbrush className="w-5 h-5" /> },
+    { name: "Design Other", level: 70, icon: <Paintbrush className="w-5 h-5" /> },
     { name: "Cloud Services", level: 75, icon: <Cloud className="w-5 h-5" /> },
   ];
 
