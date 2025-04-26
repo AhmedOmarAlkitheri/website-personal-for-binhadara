@@ -60,7 +60,8 @@ const SkillsSection: React.FC = () => {
         <div className="grid md:grid-cols-2 gap-12">
         
           {/* Technical Skills Section */}
-          <div className="space-y-6">
+          <div className="space-y-6 max-w-xl w-full mx-auto">
+        
             <div className="flex items-center gap-3 mb-6">
               <Lightbulb className="w-8 h-8 text-portfolio-primary" />
               <h3 className="text-2xl font-heading font-semibold text-portfolio-secondary">
@@ -85,7 +86,7 @@ const SkillsSection: React.FC = () => {
           </div>
 
             {/* Programming Languages Section */}
-            <div className="space-y-6">
+            <div className="space-y-6 max-w-xl w-full mx-auto">
             <div className="flex items-center gap-3 mb-6">
               <Code className="w-8 h-8 text-portfolio-primary" />
               <h3 className="text-2xl font-heading font-semibold text-portfolio-secondary">
