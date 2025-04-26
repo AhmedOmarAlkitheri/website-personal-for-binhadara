@@ -66,7 +66,7 @@ const ProjectsSection: React.FC = () => {
         <img 
           src={project.image} 
           alt={project.title} 
-          className="w-full h-full object-contain bg-white transition-transform duration-500 hover:scale-105"
+          className="min-w-full min-h-full object-cover transition-transform duration-500 hover:scale-105"
         />
       </div>
 
