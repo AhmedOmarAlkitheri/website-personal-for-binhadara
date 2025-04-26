@@ -19,13 +19,16 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollToSection }) => {
           <p className="mt-6 text-xl text-gray-700 leading-relaxed">
           مطور تطبيقات و أنظمة ذات إمكانية متوسط في تطوير التطبيقات و الأنظمة أتميز بقدرتي على التعلم السريع وحل المشكلات التقنية، وأسعى لاكتساب خبرة عملية في بيئة مهنية تدعم الابتكار والتطوير. أطمح للعمل ضمن فريق يتيح لي تطبيق مهاراتي والمساهمة في إنجاز مشاريع ذات جودة عالية.
           </p>
-          <link rel="stylesheet" href= "https://Wa.me/967730280622" title="as" />
+
+       
+
           <div className="mt-8 flex flex-wrap gap-4">
             <Button 
               className="bg-portfolio-primary hover:bg-portfolio-secondary text-white"
-              onClick={() => "https://Wa.me/967730280622"
-                // scrollToSection("contact")
-              }
+              onClick={() => window.location.href = "https://Wa.me/967730280622"}
+
+             
+              
             >
              تواصل معي
             </Button>
