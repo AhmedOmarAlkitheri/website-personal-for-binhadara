@@ -11,7 +11,7 @@ const SocialIcons: React.FC<SocialIconsProps> = ({ className = "" }) => {
   const socialLinks = [
     { 
       icon: <Mail size={18} />, 
-      href: window.location.href = "mailto:a.o.a.770284548@gmail.com", 
+      href: window.location.href = "a.o.a.770284548@gmail.com", 
    
       label: "Email"
     },
