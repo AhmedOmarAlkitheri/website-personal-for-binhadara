@@ -1,35 +1,46 @@
+
 import React from "react";
-import { Progress } from "@/components/ui/progress";
-import { Code, Paintbrush, Database, Cloud } from "lucide-react";
+import { Card } from "@/components/ui/card";
+import { Code, Paintbrush, Cloud } from "lucide-react";
 
 interface Skill {
   name: string;
-  level: number;
   icon?: React.ReactNode;
-}
-
-interface ProgrammingLanguage {
-  name: string;
-  level: number;
+  description: string;
 }
 
 const SkillsSection: React.FC = () => {
   const skills: Skill[] = [
-    { name: "Web Development", level: 90, icon: <Code className="w-5 h-5" /> },
-    { name: "Mobile Development", level: 85, icon: <Code className="w-5 h-5" /> },
-    { name: "UI/UX Design", level: 80, icon: <Paintbrush className="w-5 h-5" /> },
-    { name: "Graphic Design", level: 75, icon: <Paintbrush className="w-5 h-5" /> },
-    { name: "Design Other", level: 70, icon: <Paintbrush className="w-5 h-5" /> },
-    { name: "Cloud Services", level: 75, icon: <Cloud className="w-5 h-5" /> },
-  ];
-
-  const languages: ProgrammingLanguage[] = [
-    { name: "JavaScript/TypeScript", level: 95 },
-    { name: "Python", level: 90 },
-    { name: "Java", level: 85 },
-    { name: "PHP", level: 80 },
-    { name: "C#", level: 75 },
-    { name: "HTML/CSS", level: 95 },
+    { 
+      name: "Web Development", 
+      icon: <Code className="w-6 h-6 text-portfolio-primary" />,
+      description: "Frontend and Backend Development"
+    },
+    { 
+      name: "Mobile Development", 
+      icon: <Code className="w-6 h-6 text-portfolio-primary" />,
+      description: "iOS and Android Development"
+    },
+    { 
+      name: "UI/UX Design", 
+      icon: <Paintbrush className="w-6 h-6 text-portfolio-primary" />,
+      description: "User Interface and Experience Design"
+    },
+    { 
+      name: "Graphic Design", 
+      icon: <Paintbrush className="w-6 h-6 text-portfolio-primary" />,
+      description: "Visual Design and Branding"
+    },
+    { 
+      name: "Design Other", 
+      icon: <Paintbrush className="w-6 h-6 text-portfolio-primary" />,
+      description: "Additional Design Services"
+    },
+    { 
+      name: "Cloud Services", 
+      icon: <Cloud className="w-6 h-6 text-portfolio-primary" />,
+      description: "Cloud Infrastructure and Deployment"
+    },
   ];
 
   return (
@@ -46,51 +57,25 @@ const SkillsSection: React.FC = () => {
         </h2>
         <div className="w-20 h-1 bg-portfolio-primary mx-auto mb-10"></div>
         
-        <div className="grid md:grid-cols-2 gap-16">
-          {/* Technical Skills */}
-          <div className="bg-white p-8 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-heading font-semibold text-portfolio-primary mb-8 text-center md:text-left">
-              Technical Skills
-            </h3>
-            <div className="space-y-6">
-              {skills.map((skill, index) => (
-                <div key={index} className="bg-portfolio-light/50 p-4 rounded-lg">
-                  <div className="flex items-center justify-between mb-2">
-                    <div className="flex items-center gap-2">
-                      {skill.icon}
-                      <span className="font-medium text-portfolio-secondary">{skill.name}</span>
-                    </div>
-                    <span className="text-portfolio-primary font-medium">{skill.level}%</span>
-                  </div>
-                  <Progress 
-                    value={skill.level} 
-                    className="h-2 bg-portfolio-secondary/10" 
-                  />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {skills.map((skill, index) => (
+            <Card 
+              key={index} 
+              className="p-6 hover:shadow-lg transition-shadow duration-300 border-2 border-portfolio-primary/10 hover:border-portfolio-primary"
+            >
+              <div className="flex flex-col items-center text-center space-y-4">
+                <div className="p-3 bg-portfolio-light rounded-full">
+                  {skill.icon}
                 </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Programming Languages */}
-          <div className="bg-white p-8 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-heading font-semibold text-portfolio-primary mb-8 text-center md:text-left">
-              Programming Languages
-            </h3>
-            <div className="space-y-6">
-              {languages.map((language, index) => (
-                <div key={index} className="bg-portfolio-light/50 p-4 rounded-lg">
-                  <div className="flex justify-between mb-2">
-                    <span className="font-medium text-portfolio-secondary">{language.name}</span>
-                    <span className="text-portfolio-primary font-medium">{language.level}%</span>
-                  </div>
-                  <Progress 
-                    value={language.level} 
-                    className="h-2 bg-portfolio-secondary/10" 
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
+                <h3 className="text-xl font-heading font-semibold text-portfolio-secondary">
+                  {skill.name}
+                </h3>
+                <p className="text-gray-600">
+                  {skill.description}
+                </p>
+              </div>
+            </Card>
+          ))}
         </div>
       </div>
     </section>
