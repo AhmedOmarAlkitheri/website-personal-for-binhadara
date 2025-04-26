@@ -62,11 +62,11 @@ const ProjectsSection: React.FC = () => {
   {projects.map((project, index) => (
     <Card key={index} className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
       
-      <div className="h-48 flex items-center justify-center bg-white overflow-hidden">
+      <div className="h-64 w-full overflow-hidden">
         <img 
           src={project.image} 
           alt={project.title} 
-          className="max-h-full max-w-full object-contain transition-transform duration-500 hover:scale-105"
+          className="w-full h-full object-contain bg-white transition-transform duration-500 hover:scale-105"
         />
       </div>
 
@@ -86,7 +86,6 @@ const ProjectsSection: React.FC = () => {
             </Badge>
           ))}
         </div>
-
       </CardContent>
     </Card>
   ))}
