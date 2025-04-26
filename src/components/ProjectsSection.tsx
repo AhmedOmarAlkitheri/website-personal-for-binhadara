@@ -28,9 +28,8 @@ const ProjectsSection: React.FC = () => {
       title: "نظام فلزة",
       description: " نظام إلكتروني لأدارة نقل الركاب و البضائع ويستطيع من خلال هذا النظام تحديد ما اذا كانت المركب تعمل او لا و يستطيع معرفة من هو الموظف الذي قام بعمليات في  يوم معين و غيرها من الوظائف و المهام التي ينفذها النظام.",
       image: "https://images.unsplash.com/photo-1517430816045-df4ccef2c7ef?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3",
-      tags: ["#C", "SqlServer","Oracle" ,".Net FrameWork"],
-      // demoUrl: "https://example.com",
-      // repoUrl: "https://github.com/yourusername/task-manager"
+      tags: ["#C", "SqlServer","Oracle" ,"Net FrameWork."],
+   
     },
     {
       title: "تطبيق متجر إلكتروني",
