@@ -45,7 +45,7 @@ const ContactSection: React.FC = () => {
     {
       icon: <Phone className="text-portfolio-primary" size={24} />,
       label: " رقم الجوال ",
-      value: "967 730280622 +",
+      value: "730280622 967 +",
     },
     {
       icon: <Globe className="text-portfolio-primary" size={24} />,
