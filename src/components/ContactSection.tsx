@@ -64,7 +64,7 @@ const ContactSection: React.FC = () => {
     <section id="contact" className="w-full py-20 bg-gradient-to-b from-white via-gray-50 to-white px-6 md:px-10">
     <div className="max-w-6xl mx-auto">
       <h2 className="text-4xl md:text-5xl font-bold text-center text-portfolio-dark mb-6 tracking-wide">
-        ابباتواصل معي
+        تواصل معي
       </h2>
       <div className="w-24 h-1 bg-portfolio-primary mx-auto mb-14 rounded-full"></div>
   
