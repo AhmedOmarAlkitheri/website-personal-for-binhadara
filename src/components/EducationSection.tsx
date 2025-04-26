@@ -7,33 +7,33 @@ interface Education {
   degree: string;
   institution: string;
   years: string;
-  description: string;
-  achievements?: string[];
+  // description: string;
+  // achievements?: string[];
 }
 
 const EducationSection: React.FC = () => {
   const educationHistory: Education[] = [
     {
-      degree: "Master of Computer Science",
-      institution: "University of Technology",
-      years: "2018 - 2020",
-      description: "Specialized in Artificial Intelligence and Machine Learning with a focus on computer vision applications.",
-      achievements: [
-        "Graduated with highest honors",
-        "Published research paper on machine learning algorithms",
-        "Received scholarship for outstanding academic performance"
-      ]
+      "degree": "بكالوريوس في تقنية المعلومات (IT)",
+      "institution": "جامعة سيؤن - كلية الحاسبات",
+      "years": "2020 - 2024",
+      // description: "Specialized in Artificial Intelligence and Machine Learning with a focus on computer vision applications.",
+      // achievements: [
+      //   "Graduated with highest honors",
+      //   "Published research paper on machine learning algorithms",
+      //   "Received scholarship for outstanding academic performance"
+      // ]
     },
     {
       degree: "Bachelor of Science in Software Engineering",
       institution: "National University",
       years: "2014 - 2018",
-      description: "Comprehensive study of software development methodologies, data structures, algorithms, and system design.",
-      achievements: [
-        "Completed capstone project with distinction",
-        "Member of the university programming team",
-        "Dean's List for all semesters"
-      ]
+      // description: "Comprehensive study of software development methodologies, data structures, algorithms, and system design.",
+      // achievements: [
+      //   "Completed capstone project with distinction",
+      //   "Member of the university programming team",
+      //   "Dean's List for all semesters"
+      // ]
     }
   ];
 
@@ -69,7 +69,7 @@ const EducationSection: React.FC = () => {
                     </div>
                   </div>
                   
-                  <p className="mt-4 text-gray-700">
+                  {/* <p className="mt-4 text-gray-700">
                     {education.description}
                   </p>
                   
@@ -85,7 +85,7 @@ const EducationSection: React.FC = () => {
                         ))}
                       </ul>
                     </div>
-                  )}
+                  )} */}
                 </div>
               </div>
             </Card>

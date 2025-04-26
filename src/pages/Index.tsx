@@ -2,7 +2,7 @@
 import React, { useRef } from "react";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
-import AboutSection from "@/components/AboutSection";
+// import AboutSection from "@/components/AboutSection";
 import SkillsSection from "@/components/SkillsSection";
 import EducationSection from "@/components/EducationSection";
 import ProjectsSection from "@/components/ProjectsSection";
@@ -23,9 +23,10 @@ const Index = () => {
       <Header scrollToSection={scrollToSection} />
       <main>
         <HeroSection scrollToSection={scrollToSection} />
-        <AboutSection />
+     {/*    <AboutSection /> */}
+     <EducationSection />
         <SkillsSection />
-        <EducationSection />
+       
         <ProjectsSection />
         <ContactSection />
       </main>
