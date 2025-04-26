@@ -19,7 +19,8 @@ const ProjectsSection: React.FC = () => {
     {
       title:"تطبيق لمركز رواد المستقبل",
       description: "تطبيق خاص بطلاب المركز لادارة عمليات التسجيل و تلقي الاشعارات من الادارة و عرض معلومات السكن و عدد الطلاب المتواجدين معه في نفس الغرفة و ايضاء ميزة ارسال الشكاوي و تلقي الرد و يستطيع الطالب الاطلاع على تقييمات البرامج المشترك فيها سوا كانت (شهريه او نصفيه او سنويه ) و يحتوي التطبيق على ميزة (Dark Theme , Light Theme) و غيرها من مهام التي يقوم بها الطالب و يستعرضهاالتطبيق .",
-      image: "src/components/images/personImage.png",
+      image: "src/components/images/ALRawad.jpg",
+     
       tags: ["Flutter", "Dart", "MySql", "Working with API"],
       // demoUrl: "https://example.com",
       // repoUrl: "https://github.com/yourusername/ecommerce"
