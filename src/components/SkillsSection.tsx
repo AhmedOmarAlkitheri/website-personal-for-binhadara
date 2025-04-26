@@ -1,27 +1,27 @@
 
 import React from "react";
 import { Progress } from "@/components/ui/progress";
+import { Code, PaintBrush, Database, Cloud } from "lucide-react";
 
 interface Skill {
   name: string;
   level: number;
-  icon?: string;
+  icon?: React.ReactNode;
 }
 
 interface ProgrammingLanguage {
   name: string;
   level: number;
-  icon?: string;
 }
 
 const SkillsSection: React.FC = () => {
   const skills: Skill[] = [
-    { name: "Web Development", level: 90 },
-    { name: "Mobile Development", level: 85 },
-    { name: "UI/UX Design", level: 80 },
-    { name: "Graphic Design", level: 75 }, // Updated to include Design
-    { name: "Design Other", level: 70 }, // New design skill as requested
-    { name: "Cloud Services", level: 75 },
+    { name: "Web Development", level: 90, icon: <Code className="w-5 h-5" /> },
+    { name: "Mobile Development", level: 85, icon: <Code className="w-5 h-5" /> },
+    { name: "UI/UX Design", level: 80, icon: <PaintBrush className="w-5 h-5" /> },
+    { name: "Graphic Design", level: 75, icon: <PaintBrush className="w-5 h-5" /> },
+    { name: "Design Other", level: 70, icon: <PaintBrush className="w-5 h-5" /> },
+    { name: "Cloud Services", level: 75, icon: <Cloud className="w-5 h-5" /> },
   ];
 
   const languages: ProgrammingLanguage[] = [
@@ -36,7 +36,7 @@ const SkillsSection: React.FC = () => {
   return (
     <section 
       id="skills" 
-      className="py-20 bg-portfolio-light px-6 md:px-10"
+      className="py-20 px-6 md:px-10"
       style={{ 
         background: 'linear-gradient(135deg, #FFF4E6 0%, #FFE6D0 100%)' 
       }}
@@ -49,36 +49,45 @@ const SkillsSection: React.FC = () => {
         
         <div className="grid md:grid-cols-2 gap-16">
           {/* Technical Skills */}
-          <div>
+          <div className="bg-white p-8 rounded-lg shadow-lg">
             <h3 className="text-2xl font-heading font-semibold text-portfolio-primary mb-8 text-center md:text-left">
               Technical Skills
             </h3>
             <div className="space-y-6">
               {skills.map((skill, index) => (
-                <div key={index}>
-                  <div className="flex justify-between mb-2">
-                    <span className="font-medium text-portfolio-secondary">{skill.name}</span>
+                <div key={index} className="bg-portfolio-light/50 p-4 rounded-lg">
+                  <div className="flex items-center justify-between mb-2">
+                    <div className="flex items-center gap-2">
+                      {skill.icon}
+                      <span className="font-medium text-portfolio-secondary">{skill.name}</span>
+                    </div>
                     <span className="text-portfolio-primary font-medium">{skill.level}%</span>
                   </div>
-                  <Progress value={skill.level} className="h-2 bg-portfolio-secondary/20" />
+                  <Progress 
+                    value={skill.level} 
+                    className="h-2 bg-portfolio-secondary/10" 
+                  />
                 </div>
               ))}
             </div>
           </div>
 
           {/* Programming Languages */}
-          <div>
+          <div className="bg-white p-8 rounded-lg shadow-lg">
             <h3 className="text-2xl font-heading font-semibold text-portfolio-primary mb-8 text-center md:text-left">
               Programming Languages
             </h3>
             <div className="space-y-6">
               {languages.map((language, index) => (
-                <div key={index}>
+                <div key={index} className="bg-portfolio-light/50 p-4 rounded-lg">
                   <div className="flex justify-between mb-2">
                     <span className="font-medium text-portfolio-secondary">{language.name}</span>
                     <span className="text-portfolio-primary font-medium">{language.level}%</span>
                   </div>
-                  <Progress value={language.level} className="h-2 bg-portfolio-secondary/20" />
+                  <Progress 
+                    value={language.level} 
+                    className="h-2 bg-portfolio-secondary/10" 
+                  />
                 </div>
               ))}
             </div>
