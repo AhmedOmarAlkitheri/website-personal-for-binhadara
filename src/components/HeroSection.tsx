@@ -42,7 +42,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollToSection }) => {
           <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-lg">
             <img 
 
-              src="images/personImage.png" 
+              src="src/components/images/personImage.png" 
               alt="Eng.BinHadara" 
               className="w-full h-full object-cover"
             />
