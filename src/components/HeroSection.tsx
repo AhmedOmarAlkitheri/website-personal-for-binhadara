@@ -25,10 +25,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollToSection }) => {
           <div className="mt-8 flex flex-wrap gap-4">
             <Button 
               className="bg-portfolio-primary hover:bg-portfolio-secondary text-white"
-              onClick={() => window.location.href = "https://Wa.me/967730280622/ahmed"}
-
-             
-              
+              onClick={() => window.open("https://wa.me/967730280622", "_blank")}
             >
              تواصل معي
             </Button>
@@ -45,19 +42,18 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollToSection }) => {
         
         <div className="order-1 md:order-2 flex justify-center animate-fade-in" style={{ animationDelay: "0.4s" }}>
           <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-lg">
-       <center>     <img 
-
+            <img 
               src="src/components/images/personImage.png" 
               alt="Eng.BinHadara" 
               className="w-full h-full object-cover"
-            /> </center>
+            /> 
             <div className="absolute inset-0 bg-gradient-to-t from-portfolio-primary/30 to-transparent"></div>
           </div>
         </div>
       </div>
       
       <button 
-        onClick={() => scrollToSection("about")} 
+        onClick={() => scrollToSection("education")} 
         className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce"
         aria-label="Scroll Down"
       >
