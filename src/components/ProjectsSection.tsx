@@ -46,7 +46,7 @@ const ProjectsSection: React.FC = () => {
       description: "من خلال هذا النظام يسمح بادارة مراكز التحفيظ التابعة لها والاشراف على الحلقات و التواصل بين الاعضاء بشكل سهل وإعطاء صلاحيات مختلفة للمستخدمين وإنشاء التقارير المختلفة وإسترجاع او إنشاء نسخة من قاعدة البيانات وغيرها من المهام الموجوده في النظام",
       image: "src/components/images/halaqa.png",
       
-      tags:  ["#C", "SqlServer","Crystal Report" ,".Net FrameWork"],
+      tags:  ["#C", "SqlServer","Crystal Report" ,"Net FrameWork."],
       // demoUrl: "https://example.com",
       // repoUrl: "https://github.com/yourusername/finance-tracker"
     }
