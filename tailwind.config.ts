@@ -1,4 +1,3 @@
-
 import { type Config } from "tailwindcss";
 import { fontFamily } from "tailwindcss/defaultTheme";
 
@@ -24,10 +23,10 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         portfolio: {
-          primary: "#3b82f6", // blue-500
-          secondary: "#1d4ed8", // blue-700
+          primary: "#F97316", // برتقالي فاتح
+          secondary: "#EA580C", // برتقالي داكن
           dark: "#1e293b", // slate-800
-          light: "#f1f5f9", // slate-100
+          light: "#FFEDD5", // لون برتقالي خفيف للخلفية
         },
         primary: {
           DEFAULT: "hsl(var(--primary))",
