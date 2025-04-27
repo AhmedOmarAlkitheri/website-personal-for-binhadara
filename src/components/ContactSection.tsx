@@ -50,7 +50,7 @@ const ContactSection: React.FC = () => {
     {
       icon: <Globe className="text-portfolio-primary" size={24} />,
       label: " الموقع الألكتروني الشخصي ",
-      value: "http://vivid-personal-spark.lovable.app",
+      value: "http://website-personal-for-binhadara.lovable.app",
     },
     {
       icon: <Mail className="text-portfolio-primary" size={24} />,
