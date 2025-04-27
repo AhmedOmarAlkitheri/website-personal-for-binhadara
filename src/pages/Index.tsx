@@ -1,8 +1,7 @@
 
-import React, { useRef } from "react";
+import React from "react";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
-import AboutSection from "@/components/AboutSection";
 import SkillsSection from "@/components/SkillsSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import EducationSection from "@/components/EducationSection";
@@ -23,7 +22,6 @@ const Index: React.FC = () => {
       <Header scrollToSection={scrollToSection} />
       <main>
         <HeroSection scrollToSection={scrollToSection} />
-        <AboutSection />
         <EducationSection />
         <SkillsSection />
         <ProjectsSection />
@@ -35,3 +33,4 @@ const Index: React.FC = () => {
 };
 
 export default Index;
+

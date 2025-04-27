@@ -23,8 +23,8 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         portfolio: {
-          primary: "#F97316", // برتقالي فاتح
-          secondary: "#EA580C", // برتقالي داكن
+          primary: "#F97316", // برتقالي
+          secondary: "#000000", // اسود
           dark: "#1e293b", // slate-800
           light: "#FFEDD5", // لون برتقالي خفيف للخلفية
         },
