@@ -28,8 +28,8 @@ const ProjectsSection: React.FC = () => {
       title: "نظام فلزة",
      // description: " نظام إلكتروني لأدارة نقل الركاب و البضائع ويستطيع من خلال هذا النظام تحديد ما اذا كانت المركب تعمل او لا و يستطيع معرفة من هو الموظف الذي قام بعمليات في  يوم معين و غيرها من الوظائف و المهام التي ينفذها النظام.",
       description: "نظام إلكتروني لأدارة نقل الركاب و البضائع ويستطيع من خلال هذا النظام تحديد ما اذا كانت المركب تعمل او لا و يستطيع معرفة من هو الموظف الذي قام بعمليات في يوم معين و غيرها من الوظائف و المهام التي ينفذها النظام.",
-
-      image: "https://images.unsplash.com/photo-1517430816045-df4ccef2c7ef?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3",
+     
+      image: "src/components/images/falza.png",
       tags: ["#C", "SqlServer","Oracle" ,"Net FrameWork."],
    
     },
@@ -44,7 +44,8 @@ const ProjectsSection: React.FC = () => {
     {
       title: "نظام إلكتروني لأدارة حلقات تحفيظ القران الكريم للمؤسسة",
       description: "من خلال هذا النظام يسمح بادارة مراكز التحفيظ التابعة لها والاشراف على الحلقات و التواصل بين الاعضاء بشكل سهل وإعطاء صلاحيات مختلفة للمستخدمين وإنشاء التقارير المختلفة وإسترجاع او إنشاء نسخة من قاعدة البيانات وغيرها من المهام الموجوده في النظام",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop&ixlib=rb-4.0.3",
+      image: "src/components/images/halaqa.png",
+      
       tags:  ["#C", "SqlServer","Crystal Report" ,".Net FrameWork"],
       // demoUrl: "https://example.com",
       // repoUrl: "https://github.com/yourusername/finance-tracker"
