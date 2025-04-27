@@ -25,8 +25,8 @@ const EducationSection: React.FC = () => {
       // ]
     },
     {
-      degree: "حاصل على شهادة في تطوير تطبيقات الموبايل باستخدام فلاتر ",
-      institution: "المخيم الذي أُقيم في حضرموت -القطن",
+      degree: "مخيم في تطوير تطبيقات الموبايل باستخدام فلاتر ",
+      institution: " حضرموت -القطن",
       years: "2024 - 2025",
       // description: "Comprehensive study of software development methodologies, data structures, algorithms, and system design.",
       // achievements: [
