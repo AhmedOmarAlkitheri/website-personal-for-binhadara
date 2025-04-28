@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Card } from "@/components/ui/card";
 import { Code, Lightbulb } from "lucide-react";
@@ -68,7 +69,7 @@ const SkillsSection: React.FC = () => {
   return (
     <section 
       id="skills" 
-      className="py-16 px-4 md:px-10 bg-gradient-to-br from-portfolio-light to-white overflow-hidden"
+      className="py-12 md:py-16 px-4 md:px-10 bg-gradient-to-br from-portfolio-light to-white"
       dir="rtl" // Default to RTL for the section
     >
       <div className="container mx-auto">
@@ -79,7 +80,7 @@ const SkillsSection: React.FC = () => {
         <div className="flex flex-col lg:flex-row gap-8">
           
           {/* Technical Skills Section */}
-          <div className="w-full lg:w-2/3 space-y-4">
+          <div className="w-full lg:w-2/3">
             <div className="flex items-center gap-3 mb-4" dir="rtl">
               <Lightbulb className="w-7 h-7 text-portfolio-primary" />
               <h3 className="text-xl md:text-2xl font-heading font-semibold text-portfolio-secondary">
@@ -87,7 +88,7 @@ const SkillsSection: React.FC = () => {
               </h3>
             </div>
 
-            <ScrollArea className={isMobile ? "h-[350px]" : "h-auto"}>
+            <div className="max-h-[400px] overflow-y-auto pr-1 pb-2">
               <div className="grid gap-3">
                 {technicalSkills.map((skill, index) => (
                   <Card 
@@ -101,18 +102,18 @@ const SkillsSection: React.FC = () => {
                       {skill.name}
                     </h4>
                     {skill.description && (
-                      <p className="text-sm md:text-base text-gray-600">
+                      <p className="text-sm md:text-base text-gray-600 break-words">
                         {skill.description}
                       </p>
                     )}
                   </Card>
                 ))}
               </div>
-            </ScrollArea>
+            </div>
           </div>
 
           {/* Programming Languages Section */}
-          <div className="w-full lg:w-1/3 space-y-4">
+          <div className="w-full lg:w-1/3 mt-8 lg:mt-0">
             <div className="flex items-center gap-3 mb-4" dir="rtl">
               <Code className="w-7 h-7 text-portfolio-primary" />
               <h3 className="text-xl md:text-2xl font-heading font-semibold text-portfolio-secondary">
