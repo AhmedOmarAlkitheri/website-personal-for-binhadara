@@ -44,7 +44,7 @@ const SkillsSection: React.FC = () => {
       isArabic: false
     },
     { 
-      name: "#C",
+      name: "C#",
       description: "",
       isArabic: false
     },
@@ -54,7 +54,7 @@ const SkillsSection: React.FC = () => {
       isArabic: false
     },
     { 
-      name: "++C",
+      name: "C++",
       description: "",
       isArabic: false
     }
