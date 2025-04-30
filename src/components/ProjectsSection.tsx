@@ -19,7 +19,7 @@ const ProjectsSection: React.FC = () => {
     {
       title:"تطبيق لمركز رواد المستقبل",
       description: "تطبيق خاص بطلاب المركز لادارة عمليات التسجيل و تلقي الاشعارات من الادارة و عرض معلومات السكن و عدد الطلاب المتواجدين معه في نفس الغرفة و ايضاء ميزة ارسال الشكاوي و تلقي الرد و يستطيع الطالب الاطلاع على تقييمات البرامج المشترك فيها سوا كانت (شهريه او نصفيه او سنويه ) و يحتوي التطبيق على ميزة (Dark Theme , Light Theme) و غيرها من مهام التي يقوم بها الطالب و يستعرضها التطبيق .",
-      image: "src/components/images/ALRawad.jpg",
+      image: "/images/ALRawad.jpg",
      
       tags: ["Flutter", "Dart", "MySql", "Working with API"],
      
@@ -29,14 +29,14 @@ const ProjectsSection: React.FC = () => {
      // description: " نظام إلكتروني لأدارة نقل الركاب و البضائع ويستطيع من خلال هذا النظام تحديد ما اذا كانت المركب تعمل او لا و يستطيع معرفة من هو الموظف الذي قام بعمليات في  يوم معين و غيرها من الوظائف و المهام التي ينفذها النظام.",
       description: "نظام إلكتروني لأدارة نقل الركاب و البضائع ويستطيع من خلال هذا النظام تحديد ما اذا كانت المركب تعمل او لا و يستطيع معرفة من هو الموظف الذي قام بعمليات في يوم معين و غيرها من الوظائف و المهام التي ينفذها النظام.",
      
-      image: "src/components/images/falza.png",
+      image: "/images/falza.png",
       tags: ["#C", "SqlServer","Oracle" ,"Net FrameWork."],
    
     },
     {
       title: "تطبيق متجر إلكتروني",
       description: "تطبيق متجر إلكتروني خاص بالعميل (Client) حيث يستطيع العميل شراء منتجات تكون تابعه لصنف معين لبراند معين و يحتوي على خصومات لمنتجات معينه و يحتوي على Banner  لأعلان عن منتج و يحتوي على الكثير من المميزات مثل يقدر العميل معرفة جميع الطلبات التي تم شراوها او تم إلغائها من قبل العميل و ميزت ال Theme (Dart,Light) وغيرها من العمليات والوظائف .",
-      image: "src/components/images/marketApp.jpg",
+      image: "/images/marketApp.jpg",
       tags: ["Flutter", "Dart", "Firebase","Supabase"],
       // demoUrl: "https://example.com",
       // repoUrl: "https://github.com/yourusername/weather-app"
@@ -44,7 +44,7 @@ const ProjectsSection: React.FC = () => {
     {
       title: "نظام إلكتروني لأدارة حلقات تحفيظ القران الكريم للمؤسسة",
       description: "من خلال هذا النظام يسمح بادارة مراكز التحفيظ التابعة لها والاشراف على الحلقات و التواصل بين الاعضاء بشكل سهل وإعطاء صلاحيات مختلفة للمستخدمين وإنشاء التقارير المختلفة وإسترجاع او إنشاء نسخة من قاعدة البيانات وغيرها من المهام الموجوده في النظام",
-      image: "src/components/images/halaqa.png",
+      image: "/images/halaqa.png",
       
       tags:  ["#C", "SqlServer","Crystal Report" ,"Net FrameWork."],
       // demoUrl: "https://example.com",
